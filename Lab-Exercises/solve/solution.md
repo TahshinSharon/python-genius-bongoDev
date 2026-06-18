@@ -90,3 +90,26 @@ Return
 Budget Exceeded by $X!"
       ↓
 End
+
+#Solution for Excercises-4:
+Start
+  ↓
+Create raw_survey_inputs
+  ↓
+Create empty list sanitized_records = []
+  ↓
+For each string in raw_survey_inputs
+  ↓
+Remove leading/trailing spaces (.strip())
+  ↓
+Convert to lowercase (.lower())
+  ↓
+Append cleaned string to sanitized_records
+  ↓
+Repeat until all elements are processed
+  ↓
+Print raw_survey_inputs
+  ↓
+Print sanitized_records
+  ↓
+End
