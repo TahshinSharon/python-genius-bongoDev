@@ -68,3 +68,25 @@ Print Audit Report
   │
   ▼
 End
+
+#Solution For Excercise-3
+
+Start
+  ↓
+Receive instance_count, hourly_rate, budget_cap
+  ↓
+Calculate total_cost = instance_count × hourly_rate × 720
+  ↓
+Is total_cost > budget_cap?
+       / \
+     Yes  No
+      |    |
+Calculate   Return
+exceeded    "APPROVED:
+amount      Total Estimated Cost is $X."
+      |
+Return
+"REJECTED:
+Budget Exceeded by $X!"
+      ↓
+End
