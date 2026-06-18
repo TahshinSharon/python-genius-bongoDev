@@ -1,30 +1,35 @@
 #Solution For  Exercises-1
 
-Collect User Information
+Start
+  │
+  ▼
+Get Name
+  │
+  ▼
+Get Age
+  │
+  ▼
+Get Developer Status
+  │
+  ▼
+Is Age < 18?
+  │
+ ├── Yes → Tier 3: Guest
+ │
+ └── No
         │
         ▼
-     Check Age
+   Is Developer?
         │
-   Age < 18 ?
+    ├── Yes → Tier 1: Admin
+    │
+    └── No  → Tier 2: Standard
         │
-   ├── Yes → Tier 3: Guest
-   │
-   └── No
-         │
-         ▼
-  Check Developer Status
-         │
-   Developer?
-         │
-   ├── Yes → Tier 1: Admin Infrastructure Access
-   │
-   └── No  → Tier 2: Standard Executive Access
-         │
-         ▼
-   Generate Summary
-         │
-         ▼
-    Display Result
+        ▼
+    Print Summary
+        │
+        ▼
+       End
 
 #Solution For Excercises-2
 
