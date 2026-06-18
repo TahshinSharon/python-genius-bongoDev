@@ -113,3 +113,30 @@ Print raw_survey_inputs
 Print sanitized_records
   ↓
 End
+#Solution For Excercises-5
+Start
+  ↓
+Initialize:
+is_active = True
+cpu_percent = 94.5
+is_production = True
+  ↓
+Evaluate:
+(not is_active)
+      OR
+(cpu_percent > 90.0 and is_production)
+  ↓
+False OR (True AND True)
+  ↓
+False OR True
+  ↓
+should_alert = True
+  ↓
+if should_alert?
+   /      \
+ Yes       No
+  |         |
+Print      Print
+[ALERT]    [OK]
+  ↓
+ End
